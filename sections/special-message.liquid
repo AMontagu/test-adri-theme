@@ -1,0 +1,61 @@
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
+<div>
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'testadri' -%}
+        <h2 class="{{ block.settings.testadri_alignement }}">TEST ADRI</h2>
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.special-message.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "testadri",
+      "name": "t:sections.special-message.blocks.testadri.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "select",
+          "id": "testadri_alignement",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.special-message.blocks.testadri.settings.testadri.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.special-message.blocks.testadri.settings.testadri.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.special-message.blocks.testadri.settings.testadri.options__3.label"
+            }
+          ],
+          "default": "center",
+          "label": "t:sections.special-message.blocks.testadri.settings.testadri.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.special-message.presets.name",
+      "blocks": [
+        {
+          "type": "testadri"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

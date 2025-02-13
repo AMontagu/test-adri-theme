@@ -2878,6 +2878,32 @@
         }
       }
     },
+    "special-message": {
+      "name": "Special message",
+      "settings": {},
+      "blocks": {
+        "testadri": {
+          "name": "testadri",
+          "settings": {
+            "testadri": {
+              "label": "alignement",
+              "options__1": {
+                "label": "left"
+              },
+              "options__2": {
+                "label": "center"
+              },
+              "options__3": {
+                "label": "right"
+              }
+            }
+          }
+        },
+      },
+      "presets": {
+        "name": "special message preset"
+      }
+    },
     "rich-text": {
       "name": "Rich text",
       "settings": {

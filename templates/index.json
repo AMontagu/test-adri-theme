@@ -56,6 +56,18 @@
         "show_text_below": false
       }
     },
+    "special_message": {
+      "type": "special-message",
+      "blocks": {
+        "testadri": {
+          "type": "testadri",
+        },
+      },
+      "block_order": [
+        "testadri",
+      ],
+      "settings": {}
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -223,6 +235,7 @@
   },
   "order": [
     "image_banner",
+    "special_message",
     "rich_text",
     "featured_collection",
     "collage",
