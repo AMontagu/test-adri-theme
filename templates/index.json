@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner test sync",
+            "heading": "Image banner test sync22222",
             "heading_size": "h0"
           }
         },
@@ -44,7 +44,6 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
