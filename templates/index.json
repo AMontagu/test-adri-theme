@@ -61,10 +61,11 @@
       "blocks": {
         "testadri": {
           "type": "testadri",
-        },
+          "settings": {}
+        }
       },
       "block_order": [
-        "testadri",
+        "testadri"
       ],
       "settings": {}
     },
